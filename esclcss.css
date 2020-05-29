@@ -23,22 +23,17 @@ img{
   margin-bottom: 15px;
 
 }
-
+/*inline nav bar*/
 ul {
     list-style-type:none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #0F084B;
-
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-
 }
 
 li {
-    float: left;
+    float:left;
 }
 
 li a {
@@ -51,4 +46,54 @@ li a {
 
 li a:hover {
     background-color: #0D0221;
+}
+
+h2{
+    text-align: left;
+    font-family: fangsong;
+    font-style: oblique;
+    font-size: 60px;
+    text-align:center;
+}
+
+/*social media links with icons*/
+
+/* Style all font awesome icons */
+.fa {
+ padding: 30px;
+ font-size: 60px;
+ width: 70px;
+ text-align: center;
+ margin: 5px 2px;
+ border-radius: 30%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+ opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+ background: #3B5998;
+ color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
+}
+ /*instagram*/
+.fa-instagram {
+    background:#F46f30;
+    color: white;
+ }
+.fa-youtube {
+    background: red;
+    color: white;
+
+ }
 }
