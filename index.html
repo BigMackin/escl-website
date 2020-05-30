@@ -44,12 +44,11 @@
         </header>
 
         <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="standings.asp">Standings</a></li>
-        <li><a href="schedule.asp">Schedule</a></li>
-        <li><button class="button" onclick="showElement('statistics')">Stats</button></li>
-        <li><a href="about.asp">About</a></li>
-        <li><a href="contact.asp">Contact</a></li>
+            <li><a href="#" onclick="showElement('standings')">Standings</a></li>
+            <li><a href="#" onclick="showElement('schedule')">Schedule</a></li>
+            <li><a href="#" onclick="showElement('statistics')">Stats</a></li>
+            <li><a href="#" onclick="showElement('about')">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
 
         <!-- Add a placeholder for the Twitch embed -->
@@ -68,9 +67,45 @@
            });
           </script>
 
-          <div id = "statistics" style="display:none">
+          <div class="info" id="statistics" style="display:none">
               <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRzUfS9l3676gox92ODFqKYRCqkFdozMLZNmIbnWT9Ng2sn0uG3q_MORgJdL8xiu6A0MVxoidWtAog8/pubhtml?widget=true&amp;headers=false"></iframe>
           </div>
+
+          <!-- placeholder -->
+          <div class="info" id="schedule" style="display:none">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+
+
 
           <h2> Check out our socials for more Rocket League action </h2>
           <!-- Add font awesome icons -->
