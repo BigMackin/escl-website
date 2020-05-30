@@ -27,6 +27,17 @@
     </head>
 
     <body>
+        <script>
+            function showElement(elementId) {
+                const x = document.getElementById(elementId);
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+
         <header class='header'>
         <img src="ESCL_League_Crest.png" alt="ESCL Crest">
         <h1 class = 'header'>Welcome to The ESCL</h1>
@@ -35,8 +46,8 @@
         <ul>
         <li><a href="default.asp">Home</a></li>
         <li><a href="standings.asp">Standings</a></li>
-        <li><a href="schedual.asp">Schedual</a></li>
-        <li><a href="stats.asp">Stats</a></li>
+        <li><a href="schedule.asp">Schedule</a></li>
+        <li><button class="button" onclick="showElement('statistics')">Stats</button></li>
         <li><a href="about.asp">About</a></li>
         <li><a href="contact.asp">Contact</a></li>
         </ul>
@@ -50,19 +61,35 @@
         <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
         <script type="text/javascript">
           new Twitch.Embed("twitch-embed", {
-            width: 854,
-            height: 480,
+            width: 1200,
+            height: 700,
             channel: "official_escl",
             theme: "dark",
-            parent:["https://www.twitch.tv/official_escl"]
+            parent:["bigmackin.github.io"]
            });
           </script>
 
+          <div id = "statistics" style="display:none">
+              <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRzUfS9l3676gox92ODFqKYRCqkFdozMLZNmIbnWT9Ng2sn0uG3q_MORgJdL8xiu6A0MVxoidWtAog8/pubhtml?widget=true&amp;headers=false"></iframe>
+          </div>
+
           <h2> Check out our socials for more Rocket League action </h2>
           <!-- Add font awesome icons -->
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-youtube"></a>
+          <style>
+            .fa {
+            padding: 12px;
+            font-size: 50px;
+            width: 70px;
+            text-align:center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 20%;
+            }
+            </style>
+
+          <a href="https://www.facebook.com/officialescl" target="_blank" class="fa fa-facebook"></a>
+          <!-- <a href="#" class="fa fa-twitter"></a> -->
+          <a href="https://www.instagram.com/official_escl/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://www.youtube.com/channel/UC2ucB_TsP6EYUonqiLVO9_A" target="_blank" class="fa fa-youtube"></a>
     </body>
 </html>

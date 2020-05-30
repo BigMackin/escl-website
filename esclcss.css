@@ -1,6 +1,9 @@
 h1{
     font-size: 64px;
 }
+#twitch-embed{
+    margin: 20px;
+}
 
 body{
     background-color: #c2e7d9;
@@ -21,7 +24,19 @@ img{
   display: inline-block;
   margin-top: 15px;
   margin-bottom: 15px;
+}
 
+.button{
+    list-style-type:none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0F084B;
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
 }
 /*inline nav bar*/
 ul {
@@ -57,17 +72,6 @@ h2{
 }
 
 /*social media links with icons*/
-
-/* Style all font awesome icons */
-.fa {
- padding: 30px;
- font-size: 60px;
- width: 70px;
- text-align: center;
- margin: 5px 2px;
- border-radius: 30%;
-}
-
 /* Add a hover effect if you want */
 .fa:hover {
  opacity: 0.7;
@@ -86,14 +90,13 @@ h2{
  background: #55ACEE;
  color: white;
 }
- /*instagram*/
+ /*instagram */
 .fa-instagram {
     background:#F46f30;
     color: white;
  }
+
 .fa-youtube {
     background: red;
     color: white;
-
  }
-}
