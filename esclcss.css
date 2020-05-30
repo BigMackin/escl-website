@@ -49,6 +49,7 @@ li a {
 
 li a:hover {
     background-color: #0D0221;
+    text-decoration: none;
 }
 
 h2{
