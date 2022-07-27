@@ -12,52 +12,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- CSS only -->
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
         <!-- JS, Popper.js, and jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        
-       
-        <!-- Load the Twitch embed script -->
-        <script src="https://embed.twitch.tv/embed/v1.js"></script>
-       
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="esclcss.css">
-        <script type="text/javascript" src="showElement.js"></script>
 
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
 
-    <body>
-        <!-- Part of banner -->
-        <header class='header'>
+    <!-- Part of banner -->
+    <header class='header'>
         <a href="index.html">
         <img src="ESCL_League_Crest.png" alt="ESCL Crest">
         </a>
         <h1 class = 'header'>Welcome to The ESCL</h1>
         </header>
-
+        
         <ul>
-          <li><a href="standings.html">Standings</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="stats.html">Stats</a></li>
-          <li><a href="about.html">About</a></li>
-      </ul>
-
-
-        <!-- Add a placeholder for the Twitch embed -->
-        <div id="twitch-embed"></div>
-
+            <li><a href="standings.html">Standings</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
           
-          <!-- Statistics table from google sheets-->
-          <div class="info" id="statistics">
-              <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRzUfS9l3676gox92ODFqKYRCqkFdozMLZNmIbnWT9Ng2sn0uG3q_MORgJdL8xiu6A0MVxoidWtAog8/pubhtml?widget=true&amp;headers=false"></iframe>
-          </div>
-
-          <h2> Check out our socials for more Rocket League action </h2>
-
-          <script type="text/javascript" src="twitch.js"></script>
-    </body>
-</html>

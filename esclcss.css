@@ -6,10 +6,11 @@ h1{
 }
 
 body{
-    background-color: #c2e7d9;
-    margin: 10px;
-    border-style: ridge;
+    background-color: #3e67ee;
+    border-color: #2dad2d;
+    border-style:ridge;
     border-radius: 5px;
+    border-width: 20px;
     text-align: center;
 }
 
@@ -48,22 +49,34 @@ li a {
 }
 
 li a:hover {
-    background-color: #0D0221;
+    background-color: #fffb00;
     text-decoration: none;
 }
 
+
 h2{
     text-align: left;
-    font-family: fangsong;
-    font-style: oblique;
     font-size: 60px;
     text-align:center;
 }
+
+  .fa {
+  padding: 12px;
+  font-size: 50px;
+  width: 70px;
+  text-align:center;
+  text-decoration: none;
+  margin: 10px 7px;
+  border-radius: 20%;
+  }
 
 /*social media links with icons*/
 /* Add a hover effect if you want */
 .fa:hover {
  opacity: 0.7;
+ background: #00ff00;
+ color: #ffffff;
+ transform: scale(1.2);
 }
 
 /* Set a specific color for each brand */
@@ -79,6 +92,7 @@ h2{
  background: #55ACEE;
  color: white;
 }
+
  /*instagram */
 .fa-instagram {
     background:#F46f30;
