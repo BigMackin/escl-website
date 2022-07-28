@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% set active_page = "stats" %}
+{% block title %}Stats{% endblock %}
+{% block content %}
+   
+    <!-- Statistics table from google sheets-->
+    <div class="info" id="statistics">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRzUfS9l3676gox92ODFqKYRCqkFdozMLZNmIbnWT9Ng2sn0uG3q_MORgJdL8xiu6A0MVxoidWtAog8/pubhtml?widget=true&amp;headers=false"></iframe>
+    </div>
+{% endblock %}

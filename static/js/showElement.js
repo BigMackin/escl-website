@@ -6,5 +6,3 @@ function showElement(elementId) {
         x.style.display = "none";
     }
 }
-
-console.log("pass");

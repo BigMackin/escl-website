@@ -1,6 +1,11 @@
 h1{
     font-size: 64px;
 }
+
+#footer{
+    color: white;
+}
+
 #twitch-embed{
     margin: 20px;
 }
@@ -51,6 +56,10 @@ li a {
 li a:hover {
     background-color: #fffb00;
     text-decoration: none;
+}
+
+li a.active {
+    background-color: #2dad2d;
 }
 
 
